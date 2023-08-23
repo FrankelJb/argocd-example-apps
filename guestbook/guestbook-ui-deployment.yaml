@@ -14,7 +14,7 @@ spec:
         app: guestbook-ui
     spec:
       containers:
-      - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
+      - image: us-central1-docker.pkg.dev/jonfrankel-demo-env/quickstart-docker-repo/beginner@sha256:10d413b26cb85a8f2ebc2c2365e13572f6781cd5e7590c677d0460f9d74f0882
         name: guestbook-ui
         ports:
         - containerPort: 80
