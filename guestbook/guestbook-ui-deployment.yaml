@@ -14,7 +14,7 @@ spec:
         app: guestbook-ui
     spec:
       containers:
-      - image: us-central1-docker.pkg.dev/jonfrankel-demo-env/quickstart-docker-repo/beginner@sha256:10d413b26cb85a8f2ebc2c2365e13572f6781cd5e7590c677d0460f9d74f0882
+      - image: us-central1-docker.pkg.dev/jonfrankel-demo-env/quickstart-docker-repo/beginner@sha256:2714056dc79622f8af91645d70d90164adf11fdcab22fcdd255bad347a5efed6
         name: guestbook-ui
         ports:
         - containerPort: 80
