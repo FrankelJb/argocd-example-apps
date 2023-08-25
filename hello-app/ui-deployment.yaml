@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: helloapp-ui
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: helloapp-ui
+  template:
+    metadata:
+      labels:
+        app: helloapp-ui
+    spec:
+      containers:
+      - image: us-central1-docker.pkg.dev/jonfrankel-demo-env/quickstart-docker-repo/hello-app@sha256:0a35c055ea5a6f242f8fa2284fa0ad600ff80c895485b331ec1336046e2ab874
+        name: helloapp-ui
+        ports:
+        - containerPort: 8080
