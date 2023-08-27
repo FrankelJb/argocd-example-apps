@@ -18,3 +18,5 @@ spec:
         name: helloapp-ui
         ports:
         - containerPort: 8080
+      imagePullSecrets:
+      - name: registry-secret
