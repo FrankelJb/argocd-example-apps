@@ -14,7 +14,7 @@ spec:
         app: helloapp-ui
     spec:
       containers:
-      - image: us-central1-docker.pkg.dev/jonfrankel-demo-env/quickstart-docker-repo/hello-app@sha256:02d4ba9743557e7c9565e40d21bcf3ea3b857cffeb02460380cf79c8564a46ec
+      - image: us-central1-docker.pkg.dev/jonfrankel-demo-env/quickstart-docker-repo/hello-app@sha256:0a35c055ea5a6f242f8fa2284fa0ad600ff80c895485b331ec1336046e2ab874
         name: helloapp-ui
         ports:
         - containerPort: 8080
